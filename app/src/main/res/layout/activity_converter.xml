@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    tools:context=".Converter">
+
+    <TextView
+        style="@style/HeaderText"
+        android:text="Currency Converter"
+        android:textAlignment="textStart"
+        android:gravity="left"
+        />
+
+    <EditText
+        style="@style/edtStyle"
+        android:layout_marginTop="40dp"
+        android:hint="Amount"
+        android:id="@+id/edtAmount"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/HintText"
+                android:text="From"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                />
+        <Spinner
+            style="@style/spinnerStyle"
+            android:layout_marginLeft="4dp"
+            android:entries="@array/Currencies"
+            android:id="@+id/spnFrom"
+            >
+        </Spinner>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="120dp">
+
+            <TextView
+                style="@style/HintText"
+                android:text="TO"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="30dp"
+                />
+        <Spinner
+            style="@style/spinnerStyle"
+            android:id="@+id/spnTo"
+            android:layout_marginLeft="50dp"
+            android:entries="@array/Currencies">
+        </Spinner>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <EditText
+        style="@style/edtStyle"
+        android:layout_marginTop="60dp"
+        android:hint="Result"
+        android:editable="false"
+        android:gravity="center"
+        android:id="@+id/edtResult"
+        />
+
+    <Button
+        style="@style/btnStyle"
+        android:layout_marginTop="15dp"
+        android:text="Convert"
+        android:layout_marginLeft="5dp"
+        android:onClick="btnConvertOnclick"
+        />
+
+</LinearLayout>

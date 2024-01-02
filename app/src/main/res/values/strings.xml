@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Currency converter</string>
+    <string-array name="Currencies">
+        <item> "USD, United States dollar" </item>
+        <item> "EUR, European Union" </item>
+        <item> "ILS, israeli occupation" </item>
+        <item> "JPY, Japanese Yen" </item>
+        <item> "GBP, British Pound" </item>
+        <item> "JOD, Jordanian Dinar" </item>
+        <item> "SAR, Saudi riyal" </item>
+        <item> "RUB, Russian Ruble" </item>
+        <item> "TRY, Turkish lira" </item>
+    </string-array>
+</resources>

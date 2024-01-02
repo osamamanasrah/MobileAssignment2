@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    >
+    <TextView
+        style="@style/HeaderText"
+        android:text="Welcome to currency converter"
+        />
+    <TextView
+        style="@style/HintText"
+        android:text="Have an account?"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        />
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="200dp"
+        style="@style/btnStyle"
+
+        android:text="Log In"
+        android:id="@+id/btnLogIn"
+        android:onClick="btnLogINOnclick"
+        />
+
+
+    <TextView
+        style="@style/HintText"
+        android:text="Create a new account"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        style="@style/btnStyle"
+        android:layout_marginTop="5dp"
+        android:layout_width="200dp"
+
+        android:text="Sign Up"
+        android:id="@+id/btnSignUp"
+        android:onClick="btnSignUpOnclick"
+        />
+
+</LinearLayout>

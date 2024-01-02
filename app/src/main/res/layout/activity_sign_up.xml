@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="20dp">
+
+            <TextView
+                style="@style/HeaderText"
+                android:text="Sign up"
+            />
+
+            <LinearLayout
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="Username:"
+                    style="@style/txtStyle">
+                </TextView>
+
+                <EditText
+                    style="@style/edtStyle"
+                    android:hint="At least 4 characters"
+                    android:id="@+id/edtSignUserName"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <TextView
+                    style="@style/txtStyle"
+                    android:text="Email:"
+                    />
+
+                <EditText
+                    style="@style/edtStyle"
+                    android:hint="email@gmail.com"
+                    android:id="@+id/edtSignEmail"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/txtStyle"
+                    android:text="Password:"
+                />
+
+                <EditText
+                    style="@style/edtStyle"
+                    android:inputType="textPassword"
+                    android:hint="At least 8 characters"
+                    android:id="@+id/edtSignPass"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
+                <TextView
+                    style="@style/txtStyle"
+                    android:layout_width="180dp"
+                    android:text="Confirm password:"
+                    />
+
+                <EditText
+                    style="@style/edtStyle"
+                    android:inputType="textPassword"
+                    android:hint="Confirm"
+                    android:id="@+id/edtSignConfirm"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp">
+                <TextView
+                    style="@style/HintText"
+                    android:text="Remember me"
+                    android:layout_marginLeft="110dp"
+                    />
+                <CheckBox
+                    android:layout_marginTop="3dp"
+                    android:layout_marginLeft="20dp"
+                    android:id="@+id/checkboxSign"
+                    style="@style/checkStyle" />
+            </LinearLayout>
+
+            <Button
+                style="@style/btnStyle"
+                android:layout_marginTop="30dp"
+                android:layout_width="250dp"
+
+                android:text="Submit"
+                android:id="@+id/btnSignSubmit"
+                android:onClick="btnSignSubmitOnclick"/>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

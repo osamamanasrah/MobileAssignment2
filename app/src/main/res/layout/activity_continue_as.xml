@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="40dp"
+    tools:context=".continue_as">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:layout_gravity="left"
+                android:text="Continue as:"
+                android:textSize="21dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+             <ListView
+                 android:id="@+id/listView2"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="15dp"
+                 >
+             </ListView>
+
+            <Button
+                style="@style/btnStyle"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="5dp"
+                android:text="Another account"
+                android:textSize="18dp"
+                android:gravity="left"
+                android:layout_gravity="left"
+                android:id="@+id/btnAnotherAccount"
+                android:onClick="btnAnotherAccountOnClick"
+                >
+            </Button>
+        </LinearLayout>
+</FrameLayout>

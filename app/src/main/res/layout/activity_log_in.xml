@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".log_in">
+
+    <TableRow
+        android:gravity="center">
+        <TextView
+            android:text="Log in"
+            style="@style/HeaderText"
+            >
+        </TextView>
+    </TableRow>
+
+    <EditText
+        style="@style/edtStyle"
+        android:hint="Email"
+        android:id="@+id/edtEmail"
+        android:layout_marginTop="85dp"/>
+    <EditText
+        style="@style/edtStyle"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:layout_marginTop="15dp"
+        android:id="@+id/edtPassword"
+        />
+
+    <TableRow
+        android:layout_marginTop="20dp">
+        <TextView
+            style="@style/HintText"
+            android:text="Remember me"
+            />
+        <CheckBox
+            style="@style/checkStyle"
+            android:layout_marginRight="20dp"
+            android:id="@+id/checkbox"/>
+    </TableRow>
+
+    <TableRow
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <Button
+            style="@style/btnStyle"
+            android:text="Submit"
+            android:id="@+id/btnSubmit"
+            android:onClick="btnSubmitOnclick"
+            >
+        </Button>
+    </TableRow>
+</TableLayout>
